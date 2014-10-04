@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns       = "html://www.w3.org/ns/widgets"
-            xmlns:gap   = "http://phonegap.com/ns/1.0"
-            id          = "com.phonegap.example"
+    <widget xmlns = "html://www.w3.org/ns/widgets"
+            xmlns:gap = "http://phonegap.com/ns/1.0"
+            id = "com.phonegap.example"
             versionCode = "10"
-            version     = "1.0.0" >
+            version = "1.0.0" >
 
   <!-- versionCode is optional and Android only -->
         
     <name>Transit Chicago</name>
          
     <description>
-        L stop and bus stop
+        L stop and Bus stop
         </description>
 
     <author href=" https://build.phonegap.com" email="jmcintyremarketing@gmail.com">
