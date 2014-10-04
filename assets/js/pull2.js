@@ -1,24 +1,23 @@
-// File connecting the Data Portal Api 
-
-$.getJSON('http://data.cityofchicago.org/resource/8pix-ypme.json', function(lstops){
-   
-    $.each(lstops, function(i, lstop){
-        $('#lstoplist').append(generateLStopLink(lstop));
+// File connecting the Bus Data Portal Api 
+$.getJSON('assets/js/busstops.json', function(bstops){
+    
+    $.each(bstops, function(i, bstop){
+        $('#bstoplist').append(generateBStopLink(bstop));
     
 });
     
-    $('#lstoplist').listview('refresh');
+    $('#bstoplist').listview('refresh');
     
 });
 
-function generateLStopLink(lstop){
+function generateBStopLink(bstop){
      
     return '<li><a href="javascript:void(0)'
             + '"onclick="goToStopDetailPage(\''
-            + lstop.stop_name 
+            + bstop.stop_name 
             + '\',\''
-            + lstop.station_descriptive_name + '\')">'
-            + lstop.stop_name
+            + bstop.station_descriptive_name + '\')">'
+            + bstop.stop_name
             + '</a></li>';
 }
 

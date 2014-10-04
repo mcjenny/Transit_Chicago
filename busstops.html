@@ -7,15 +7,17 @@
 <script src="assets/js/jquery.mobile-1.4.4.js"></script>
 </head>
 <body>
-<section data-role="page">
+<section data-role="page" daata-add-back-btn="true">
 	<header data-role="header">
 		<h1> CTA Bus Stops </h1>
+        <a data-icon="reload" id="button" onclick="location.reload(true);">Refresh</a>
 	</header>
 	<div data-role="content">
-			<ul data-role="listview" data-inset="true" id="busstops">
+			<ul data-role="listview" data-inset="true" id="bstoplist">
 			
 			</ul>
 	</div>
 </section>
+    <script src="assets/js/pull2.js"></script>
 </body>
 </html>
